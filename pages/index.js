@@ -10,8 +10,8 @@ const Home = () => (
     </Head>
 
     <ul>
-      <li><Link href="/angel"><a>Angel, toque aqui. ❤️</a></li>
-      <li><Link href="/gabriella"><a>Gabriella, toque aqui. ❤️</a></li>
+      <li><Link href="/angel"><a>Angel, toque aqui. ❤️</a></Link></li>
+      <li><Link href="/gabriella"><a>Gabriella, toque aqui. ❤️</a></Link></li>
     </ul>
   
     <style jsx>{`

@@ -9,8 +9,8 @@ const Gabriella = () => (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <ul>
-      <li><Link href="/angel"><a>Angel, toque aqui. ❤️</a></li>
-      <li><Link href="/gabriella"><a>Gabriella, toque aqui. ❤️</a></li>
+      <li><Link href="/angel"><a>Angel, toque aqui. ❤️</a></Link></li>
+      <li><Link href="/gabriella"><a>Gabriella, toque aqui. ❤️</a></Link></li>
     </ul>
 
     <style jsx>{`

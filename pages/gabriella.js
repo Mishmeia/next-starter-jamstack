@@ -8,9 +8,7 @@ const Gabriella = () => (
       <title>Para Gabriella ❤️</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <ul>
-      <h1>Para Gabriella ❤️:
-    </ul>
+      <h1>Para Gabriella ❤️:</h1>
 
     <style jsx>{`
       :global(html,body) {

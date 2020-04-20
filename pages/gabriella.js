@@ -9,8 +9,7 @@ const Gabriella = () => (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <ul>
-      <li><Link href="/angel"><a>Angel, toque aqui. ❤️</a></Link></li>
-      <li><Link href="/gabriella"><a>Gabriella, toque aqui. ❤️</a></Link></li>
+      <h1>Para Gabriella ❤️:
     </ul>
 
     <style jsx>{`
@@ -48,4 +47,4 @@ const Gabriella = () => (
   </div>
 )
 
-export default Home
+export default Gabriella

@@ -1,13 +1,15 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import styled from 'styled-components'
+import { styled, createGlobalStyle } from 'styled-components'
 
-const Tudo = styled.div`
-  background: ${props => props.theme.bg};
-  width: 100%; 
-  height: 100%;
-`;
+const GlobalStyle = createGlobalStyle`
+  body {
+    background: ${props => props.theme.bg};
+    width: 100%; 
+    height: 100%;
+  }
+`
 
 const TemaTeste = styled.div`
   height: 100vh;
@@ -45,10 +47,6 @@ const Gabriella = () => (
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        text-align: center;
-        background-color: #282c34;
-        color: white;
       }
     `}</style>
     </Tudo>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import useDarkMode from 'use-dark-mode'
 import { ThemeProvider } from 'styled-components'
 import { lightTheme, darkTheme } from '../theme'
+import estilo from './style.scss'
 
 const MyApp = ({ Component, pageProps }) => {
   const [isMounted, setIsMounted] = useState(false)
@@ -15,9 +16,9 @@ const MyApp = ({ Component, pageProps }) => {
   return (
     <ThemeProvider theme={theme}>
       {darkMode.value ? ( 
-      <button className="lampada" onClick={darkMode.disable}><img src="/lampada.svg" /></button>    
+      <button className={estilo.lampada} onClick={darkMode.disable}><img src="/lampada.svg" /></button>    
       ) : (
-      <button className="lampada" onClick={darkMode.enable}><img src="/lampada.svg" /></button>
+      <button className={estilo.lampada} onClick={darkMode.enable}><img src="/lampada.svg" /></button>
       )}
       {isMounted && <Component {...pageProps} />}
     </ThemeProvider>

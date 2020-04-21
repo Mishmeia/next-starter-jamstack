@@ -14,7 +14,7 @@ const MyApp = ({ Component, pageProps }) => {
   } else {
     const otemaepreto = false;
   }
-  return otemaepreto
+  return otemaepreto;
 }
   
   useEffect(() => {

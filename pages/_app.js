@@ -15,9 +15,9 @@ const MyApp = ({ Component, pageProps }) => {
   return (
     <ThemeProvider theme={theme}>
       {darkMode.value ? ( 
-      <button onClick={darkMode.disable}><img src="/lampada.svg" style={{float:left, marginRight:0}} /></button>    
+      <button onClick={darkMode.disable}><img src="/lampada.svg" /></button>    
       ) : (
-      <button onClick={darkMode.enable}><img src="/lampada.svg" style={{float:left, marginRight:0}} /></button>
+      <button onClick={darkMode.enable}><img src="/lampada.svg" /></button>
       )}
       {isMounted && <Component {...pageProps} />}
     </ThemeProvider>

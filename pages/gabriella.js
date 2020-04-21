@@ -5,7 +5,8 @@ import styled from 'styled-components'
 
 const TemaTeste = styled.div`
   height: 100vh;
-  width: 100%;
+  width: 100vh;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;

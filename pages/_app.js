@@ -14,8 +14,11 @@ const MyApp = ({ Component, pageProps }) => {
 
   return (
     <ThemeProvider theme={theme}>
+      {darkMode.value ? ( 
       <button onClick={darkMode.disable}>LIGHT MODE</button>    
+      ) : (
       <button onClick={darkMode.enable}>DARK MODE</button>
+      )}
       {isMounted && <Component {...pageProps} />}
     </ThemeProvider>
   )

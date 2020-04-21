@@ -10,9 +10,9 @@ const MyApp = ({ Component, pageProps }) => {
   
   const estaPreto = (tema) => {
   if(tema == 'darkTheme') {
-    const otemaepreto = true;
+    otemaepreto = true;
   } else {
-    const otemaepreto = false;
+    otemaepreto = false;
   }
   return otemaepreto;
 }

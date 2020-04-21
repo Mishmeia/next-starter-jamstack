@@ -15,27 +15,15 @@ const MyApp = ({ Component, pageProps }) => {
 
   return (
     <ThemeProvider theme={theme}>
+    <div className={estilo.tema}>
       {darkMode.value ? ( 
       <button className={estilo.lampada} onClick={darkMode.disable}><img src="/lampada.svg" /></button>    
       ) : (
       <button className={estilo.lampada} onClick={darkMode.enable}><img src="/lampada.svg" /></button>
       )}
       {isMounted && <Component {...pageProps} />}
+    </div>
     </ThemeProvider>
-       
-        <style jsx>{`
-      :global(html,body) {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-      }
-      .lampada {
-        position: fixed;
-        bottom: 0;
-        right: 0;
-      }
-    `}</style>
   )
 }
 

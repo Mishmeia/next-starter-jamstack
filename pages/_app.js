@@ -21,6 +21,20 @@ const MyApp = ({ Component, pageProps }) => {
       )}
       {isMounted && <Component {...pageProps} />}
     </ThemeProvider>
+       
+        <style jsx>{`
+      :global(html,body) {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .lampada {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+      }
+    `}</style>
   )
 }
 

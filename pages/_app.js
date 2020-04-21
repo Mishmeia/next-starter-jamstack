@@ -20,7 +20,7 @@ const MyApp = ({ Component, pageProps }) => {
       <button onClick={darkMode.enable}>DARK MODE</button>
       ) : (
       <button onClick={darkMode.disable}>LIGHT MODE</button>
-      )
+      )}
       {isMounted && <Component {...pageProps} />}
     </ThemeProvider>
   )

@@ -3,9 +3,14 @@ import Head from 'next/head'
 import Link from 'next/link'
 import styled from 'styled-components'
 
+const Tudo = styled.div`
+  background: ${props => props.theme.bg};
+  width: 100%; 
+  height: 100%;
+`;
+
 const TemaTeste = styled.div`
   height: 100vh;
-  width: 100vh;
   position: relative;
   display: flex;
   align-items: center;
@@ -15,6 +20,7 @@ const TemaTeste = styled.div`
 `;
 const Gabriella = () => (
   <div>
+    <Tudo>
     <Head>
       <title>Para Gabriella ❤️</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -44,15 +50,8 @@ const Gabriella = () => (
         background-color: #282c34;
         color: white;
       }
-      :global(.lampada) {
-        position: sticky;
-      }
-      :global(.tema) {
-        bottom: 16px;
-        right: 16px;
-        position: absolute;
-      }
     `}</style>
+    </Tudo>
   </div>
 )
 

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import useDarkMode from 'use-dark-mode'
 import { ThemeProvider } from 'styled-components'
 import { lightTheme, darkTheme } from '../theme'
-import estilo from './style.scss'
+import estilo from '../style.scss'
 
 const MyApp = ({ Component, pageProps }) => {
   const [isMounted, setIsMounted] = useState(false)

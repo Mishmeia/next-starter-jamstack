@@ -44,13 +44,10 @@ const Gabriella = () => (
         background-color: #282c34;
         color: white;
       }
-
-      a {
-        color: pink;
-        text-decoration: none;
-      }
-      .topo {
-        height: 100vh;
+      .lampada {
+        position: fixed;
+        bottom: 0;
+        right: 0;
       }
     `}</style>
   </div>

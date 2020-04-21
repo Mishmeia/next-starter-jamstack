@@ -8,7 +8,14 @@ const MyApp = ({ Component, pageProps }) => {
   const darkMode = useDarkMode(true)
   const theme = darkMode.value ? darkTheme : lightTheme
   
-  
+  const estaPreto = (tema) => {
+  if(tema == 'darkTheme') {
+    const otemaepreto = true;
+  } else {
+    const otemaepreto = false;
+  }
+  return otemaepreto
+}
   
   useEffect(() => {
     setIsMounted(true)
@@ -24,15 +31,6 @@ const MyApp = ({ Component, pageProps }) => {
       {isMounted && <Component {...pageProps} />}
     </ThemeProvider>
   )
-}
-
-estaPreto = (tema) => {
-  if(tema == 'darkTheme') {
-    const otemaepreto = true;
-  } else {
-    const otemaepreto = false;
-  }
-  return otemaepreto
 }
 
 export default MyApp

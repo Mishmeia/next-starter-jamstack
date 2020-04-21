@@ -7,23 +7,14 @@ const MyApp = ({ Component, pageProps }) => {
   const [isMounted, setIsMounted] = useState(false)
   const darkMode = useDarkMode(true)
   const theme = darkMode.value ? darkTheme : lightTheme
-  
-  const estaPreto = (tema) => {
-  if(tema == 'darkTheme') {
-    otemaepreto = true;
-  } else {
-    otemaepreto = false;
-  }
-  return otemaepreto;
-}
-  
+ 
   useEffect(() => {
     setIsMounted(true)
   }, [])
 
   return (
     <ThemeProvider theme={theme}>
-      {estaPreto(theme) ? ( 
+      {darkMode.value ? ( 
       <button onClick={darkMode.enable}>DARK MODE</button>
       ) : (
       <button onClick={darkMode.disable}>LIGHT MODE</button>

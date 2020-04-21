@@ -44,10 +44,13 @@ const Gabriella = () => (
         background-color: #282c34;
         color: white;
       }
-      .lampada {
-        position: fixed;
-        bottom: 0;
-        right: 0;
+      :global(.lampada) {
+        position: sticky;
+      }
+      :global(.tema) {
+        bottom: 16px;
+        right: 16px;
+        position: absolute;
       }
     `}</style>
   </div>

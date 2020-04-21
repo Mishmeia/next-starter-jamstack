@@ -3,8 +3,12 @@ import Head from 'next/head'
 import Link from 'next/link'
 import styled from 'styled-components'
 
-const TemaTeste = styled.section`
+const TemaTeste = styled.div`
   height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: ${props => props.theme.bg};
   color: ${props => props.theme.fontColor};
 `;

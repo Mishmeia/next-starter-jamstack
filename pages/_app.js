@@ -15,9 +15,9 @@ const MyApp = ({ Component, pageProps }) => {
   return (
     <ThemeProvider theme={theme}>
       {darkMode.value ? ( 
-      <button onClick={darkMode.disable}><img src="https://iarloamavoces.netlify.app/lampada.svg" /></button>    
+      <button style={{display:inline-block}} onClick={darkMode.disable}><img src="/lampada.svg" style={{float:left;margin-right:0.5em}} /></button>    
       ) : (
-      <button onClick={darkMode.enable}><img src="https://iarloamavoces.netlify.app/lampada.svg" /></button>
+      <button style={{display:inline-block}} onClick={darkMode.enable}><img src="/lampada.svg" style={{float:left;margin-right:0.5em}} /></button>
       )}
       {isMounted && <Component {...pageProps} />}
     </ThemeProvider>

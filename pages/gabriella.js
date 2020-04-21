@@ -1,9 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import { styled, createGlobalStyle } from 'styled-components'
+import styled from 'styled-components'
 
-const GlobalStyle = createGlobalStyle`
+const Tudo = styled.createGlobalStyle`
   body {
     background: ${props => props.theme.bg};
     width: 100%; 
